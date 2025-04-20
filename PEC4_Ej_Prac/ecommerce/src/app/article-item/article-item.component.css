@@ -1,0 +1,37 @@
+/* Card - Not in stock (gray) */
+.card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: gray;
+  margin: 20px;
+  border: 2px solid black;
+  width: 50vh;
+}
+
+/* Card in stock (green) */
+.card.sale {
+  border-color: green;
+  background-color: lightgreen;
+}
+
+/* Image */
+img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+/* Quantity buttons */
+.cartQuantity {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Buttons */
+button {
+  padding: 6px 12px;
+}
