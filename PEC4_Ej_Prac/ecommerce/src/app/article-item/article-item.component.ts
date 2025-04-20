@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Article } from '../models/article';
+/* Exercise 5: Import NgClass and NgIf */
+import { NgClass, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-article-item',
   standalone: true,
-  imports: [],
+  /* Exercise 5: Import NgClass and NgIf */
+  imports: [NgClass, NgIf],
   templateUrl: './article-item.component.html',
   styleUrl: './article-item.component.css',
 })

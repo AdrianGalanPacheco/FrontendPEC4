@@ -4,11 +4,14 @@
   <img [src]="article.imageUrl" alt="{{ article.name }}" />
   <!-- Card info -->
   <div class="info">
-    <h1>{{ article.name }} - {{ article.price }}€</h1>
+    <!-- Exercise 5: ngClass to change price to gray color if article is not on sale-->
+    <h1>{{ article.name }} - <span [ngClass]="{'price': true, 'not-sale': !article.isOnSale}">{{ article.price
+        }}€</span></h1>
     <p>{{ article.isOnSale ? 'On Sale!' : 'Not for sale' }}</p>
 
     <!-- Cart quantity buttons-->
-    <div class="cartQuantity">
+    <!-- Exercise 5: ngIf to show/hide buttons if article is on sale or not -->
+    <div class="cartQuantity" *ngIf="article.isOnSale">
       <!-- Click function and disabled if quantity is 0-->
       <button (click)="decrementQuantity()" [disabled]="article.quantityInCart === 0">-</button>
       <span>{{ article.quantityInCart }}</span>

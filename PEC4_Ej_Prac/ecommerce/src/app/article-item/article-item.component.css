@@ -4,7 +4,7 @@
   align-items: center;
   padding: 20px;
   border-radius: 10px;
-  background-color: gray;
+  background-color: white;
   margin: 20px;
   border: 2px solid black;
   width: 50vh;
@@ -14,6 +14,11 @@
 .card.sale {
   border-color: green;
   background-color: lightgreen;
+}
+
+/* Exercise 5: Price not on sale */
+.not-sale {
+  color: gray;
 }
 
 /* Image */
