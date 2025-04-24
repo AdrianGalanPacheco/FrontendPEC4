@@ -13,10 +13,10 @@
     <!-- Exercise 5: ngIf to show/hide buttons if article is on sale or not -->
     <div class="cartQuantity" *ngIf="article.isOnSale">
       <!-- Click function and disabled if quantity is 0-->
-      <button (click)="decrementQuantity()" [disabled]="article.quantityInCart === 0">-</button>
+      <button (click)="changeQuantity(-1)" [disabled]="article.quantityInCart === 0">-</button>
       <span>{{ article.quantityInCart }}</span>
       <!-- Click function -->
-      <button (click)="incrementQuantity()">+</button>
+      <button (click)="changeQuantity(1)">+</button>
     </div>
   </div>
 </div>
