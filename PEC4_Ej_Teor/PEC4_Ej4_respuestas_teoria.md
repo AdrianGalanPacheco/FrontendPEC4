@@ -1,7 +1,7 @@
 # 1. Explica qué son y cuándo se deberían utilizar las siguientes variables locales de la directiva estructural `NgFor`:
 * **`index`:** Corresponde al índice actual del elemento dentro del array y se usa cuando se necesite mostrar o usar la posición del elemento.
 * **`even`:** Se convierte en `true` si el índice del elemento es par y se utiliza para aplicar estilos alternos a los elementos pares, como en tablas.
-* **`odd`:** Se convierte `true`si el índice del elemento es impar y se utiliza para aplicar estilos alternos a los elementos impares, como en tablas.
+* **`odd`:** Se convierte `true` si el índice del elemento es impar y se utiliza para aplicar estilos alternos a los elementos impares, como en tablas.
 * **`first`:** Se convierte `true` si es el primer elemento del array y se usa para tratar el primer elemento de forma diferente.
 * **`last`:** Se convierte en `true` si es el último elemento del array y se usa para tratar el último elemento de forma diferente.
 
@@ -53,7 +53,7 @@ export class DayList {
 En la plantilla HTML tendríamos lo siguiente:
 ```
 <ol>
-    <li *ngFor="let day of days; trackBy: trackByIndex>
+    <li *ngFor="let day of days; trackBy: trackByIndex">
         {{ day }}
     </li>
 </ol>
