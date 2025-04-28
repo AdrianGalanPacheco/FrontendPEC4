@@ -5,7 +5,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'app-shadowdom',
-    template: `<p>Emulated text</p>`;
+    template: `<p>Shadow DOM text</p>`,
     styles: [`
         p {
             color: green;
@@ -22,7 +22,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'app-emulate',
-    template: `<p>Emulated text</p>`;
+    template: `<p>Emulated text</p>`,
     styles: [`
         p {
             color: green;
@@ -39,7 +39,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'app-none',
-    template: `<p>None text</p>`;
+    template: `<p>None text</p>`,
     styles: [`
         p {
             color: green;
