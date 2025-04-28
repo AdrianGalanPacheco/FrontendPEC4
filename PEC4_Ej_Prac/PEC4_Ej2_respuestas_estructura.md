@@ -1,6 +1,6 @@
 # 1. ¿Qué comando debes utilizar para crear un nuevo proyecto Angular utilizando Angular CLI denominado ecommerce? Con Angular CLI crea el proyecto angular ecommerce y explica brevemente la estructura y ficheros que ha generado Angular CLI.
 
-He utilizado el comando `ng new ecommerce` para crear un nuevo proyecto Angular llamado ecommerce.
+He utilizado el comando `ng new ecommerce --no-strict --standalone=false` para crear un nuevo proyecto Angular llamado ecommerce.
 
 ## Directorio .vscode
 * **extensions.json:** Lista de extensiones recomendadas.
@@ -32,15 +32,12 @@ Contiene todas las dependencias que el proyecto Angular necesita para funcionar.
 * **app.component.html:** Plantilla del componente `AppComponent`.
 * **app.component.spec.ts:** Archivo de tests unitarios para `AppComponent`.
 * **app.component.ts:** Define la lógica del componente `AppComponent`.
-* **app.config.ts:** Contiene la configuración principal de la aplicación Angular.
-* **app.routes.ts:** Define las rutas de navegación.
+* **app.module.ts:** Organiza y gestiona todo lo que el proyecto necesita para funcionar, como pueden ser los componentes, servicios, módulos, etc.
 
 ### Directorio assets
 * **.gitkeep:** Garantiza que el directorio se incluya vacío en el repositorio.
 
 # 2. Explica cada uno de los siguientes decoradores generados por Angular CLI, detallando cada una de las propiedades que se definen en app.module.ts y app.component.ts.
-
-No he obtenido el archivo app.modules.ts en la instalación del proyecto. Según información de Internet, esto se debe a que el proyecto utiliza componentes *standalone*. Esto permite omitir el módulo principal.
 
 ## app.module.ts - @NgModule (declarations, imports, providers, bootstrap)
 `@NgModule` se usa para configurar el módulo principal de la aplicación.
