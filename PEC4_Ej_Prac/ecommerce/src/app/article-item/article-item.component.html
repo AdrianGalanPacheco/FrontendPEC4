@@ -1,0 +1,19 @@
+<!-- Card and sale class if article is on sale -->
+<div class="card" [class.sale]="article.isOnSale">
+    <!-- Image -->
+    <img [src]="article.imageUrl" alt="{{ article.name }}" />
+    <!-- Card info -->
+    <div class="info">
+        <h1>{{ article.name }} - {{ article.price }}€</h1>
+        <p>{{ article.isOnSale ? 'On Sale!' : 'Not for sale' }}</p>
+
+        <!-- Cart quantity buttons-->
+        <div class="cartQuantity">
+            <!-- Click function and disabled if quantity is 0-->
+            <button (click)="decrementQuantity()" [disabled]="article.quantityInCart === 0">-</button>
+            <span>{{ article.quantityInCart }}</span>
+            <!-- Click function -->
+            <button (click)="incrementQuantity()">+</button>
+        </div>
+    </div>
+</div>
