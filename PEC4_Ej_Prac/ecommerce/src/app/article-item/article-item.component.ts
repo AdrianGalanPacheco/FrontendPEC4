@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Article } from '../models/article';
+import { NgClass, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-article-item',

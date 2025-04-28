@@ -16,6 +16,11 @@
     background-color: lightgreen;
 }
 
+/* Exercise 5: Price not on sale */
+.not-sale {
+    color: gray;
+}
+
 /* Image */
 img {
     width: 120px;
